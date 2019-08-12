@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (min-content)[3];
+      grid-template-rows: repeat(3, -webkit-min-content);
+      grid-template-rows: repeat(3, min-content);
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  background-color: orangered;
+  -ms-grid-columns: minmax(auto) 1fr min-content;
+      grid-template-columns: minmax(auto) 1fr -webkit-min-content;
+      grid-template-columns: minmax(auto) 1fr min-content;
+  grid-auto-flow: column;
+  padding: 1.5rem;
+}
+
+.header__title {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.header__links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+/*# sourceMappingURL=main.css.map */

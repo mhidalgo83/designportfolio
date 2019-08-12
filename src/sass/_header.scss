@@ -1,0 +1,18 @@
+.header {
+  display: grid;
+  background-color: orangered;
+  grid-template-columns: minmax(auto) 1fr min-content;
+  grid-auto-flow: column;
+  padding: 1.5rem;
+
+  &__title {
+    justify-self: start;
+  }
+
+  &__links {
+    display: grid;
+    grid-column: 3/4;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+}
